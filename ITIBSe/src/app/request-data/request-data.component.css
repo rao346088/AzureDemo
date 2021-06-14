@@ -1,0 +1,30 @@
+/*.csv-file-chooser-section {
+    padding: 5px;
+    margin: 1%;
+    border: 1px solid;
+    text-align: center;
+  }*/
+
+  .colclass{
+    background-color:#a58a33; 
+  }
+
+.mat-icon{
+  background-color: aliceblue;
+  width: 0px;
+  height: 0mm;
+  transform:scale(1.x) 
+  
+}
+  
+button:focus {
+  outline: none;
+}
+
+::ng-deep .mat-button-focus-overlay {
+  display: none;
+}
+
+.mat-button-focus-overlay {
+  background-color: transparent!important;
+}

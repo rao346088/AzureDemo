@@ -1,0 +1,291 @@
+[
+    {
+      "MemberName": "DCSS348@",
+      "GenName": "CAB01_COMPUTE_CHARGE",
+      "Type": "JCL",
+      "Developer": "P37185",
+      "CCID": "20-000002859",
+      "MissingConflict": "No",
+      "id": 1
+    },
+    {
+      "MemberName": "DCSS325@",
+      "GenName": "CAB01_COMPUTE_CHARGE",
+      "Type": "JCL",
+      "Developer": "P44352",
+      "CCID": "20-000002859",
+      "MissingConflict": "No",
+      "IncorrectCCID": "No",
+      "id": 2
+    },
+    {
+      "MemberName": "DCSS348@",
+      "GenName": "CAB01_COMPUTE_CHARGE",
+      "Type": "JCL",
+      "Developer": "P37185",
+      "CCID": "20-000002859",
+      "MissingConflict": "No",
+      "IncorrectCCID": "No",
+      "id": 3
+    },
+    {
+      "MemberName": "DCSS348B",
+      "GenName": "JB02_COMPUTE_AGRMT_EQL_PAY_AMT",
+      "Type": "JCL",
+      "Developer": "P37185",
+      "CCID": "20-000002859",
+      "MissingConflict": "No",
+      "IncorrectCCID": "No",
+      "id": 4
+    },
+    {
+      "MemberName": "DCSS438O",
+      "GenName": "JB02_COMPUTE_AGRMT_EQL_PAY_AMT",
+      "Type": "JCL",
+      "Developer": "P44352",
+      "CCID": "20-000002859",
+      "MissingConflict": "No",
+      "IncorrectCCID": "No",
+      "id": 5
+    },
+    {
+      "MemberName": "DCSS439@",
+      "GenName": "CAB_VALIDATE_NET_MTRNG_MSTR_READ",
+      "Type": "JCL",
+      "Developer": "P44352",
+      "CCID": "20-000002859",
+      "MissingConflict": "No",
+      "IncorrectCCID": "No",
+      "id": 6
+    },
+    {
+      "MemberName": "DCSS464@",
+      "GenName": "CAB_VALIDATE_NET_MTRNG_MSTR_READ",
+      "Type": "JCL",
+      "Developer": "P44352",
+      "CCID": "20-000002859",
+      "MissingConflict": "No",
+      "IncorrectCCID": "No",
+      "id": 7
+    },
+    {
+      "MemberName": "JABBA770",
+      "GenName": "CAB_COMPUTE_TOU_CREDIT",
+      "Type": "CGABB",
+      "Developer": "P44525",
+      "CCID": "20-000002859",
+      "MissingConflict": "No",
+      "IncorrectCCID": "No",
+      "id": 8
+    },
+    {
+      "MemberName": "JABBA786",
+      "GenName": "CAB_CMNTY_SLR_GET_RATE_SCHED",
+      "Type": "CGABB",
+      "Developer": "P44526",
+      "CCID": "20-000002864",
+      "MissingConflict": "No",
+      "IncorrectCCID": "No",
+      "id": 9
+    },
+    {
+      "MemberName": "JABBA790",
+      "GenName": "CAB_PRCS_PARTIC_SUBSCRPTN_FILE",
+      "Type": "CGABB",
+      "Developer": "P44527",
+      "CCID": "20-000002864",
+      "MissingConflict": "No",
+      "IncorrectCCID": "No",
+      "id": 10
+    },
+    {
+      "MemberName": "JABBA791",
+      "GenName": "CAB_VAL_PARTIC_SUBSCRPTN_FILE",
+      "Type": "CGABB",
+      "Developer": "P44528",
+      "CCID": "20-000002864",
+      "MissingConflict": "No",
+      "IncorrectCCID": "No",
+      "id": 11
+    },
+    {
+      "MemberName": "JABBA792",
+      "GenName": "CAB_VALIDATE_SUBSCRTN_STAT_CODE",
+      "Type": "CGABB",
+      "Developer": "P44529",
+      "CCID": "20-000002864",
+      "MissingConflict": "No",
+      "IncorrectCCID": "No",
+      "id": 12
+    },
+    {
+      "MemberName": "JABBA793",
+      "GenName": "CAB_ENROLL_IN_CMNTY_SOLAR_PARTIC",
+      "Type": "CGABB",
+      "Developer": "P44530",
+      "CCID": "20-000002864",
+      "MissingConflict": "No",
+      "IncorrectCCID": "No",
+      "id": 13
+    },
+    {
+      "MemberName": "JABBA794",
+      "GenName": "CAB_DEENROLL_CMNTY_SOLAR_PARTC",
+      "Type": "CGABB",
+      "Developer": "P44531",
+      "CCID": "20-000002864",
+      "MissingConflict": "No",
+      "IncorrectCCID": "No",
+      "id": 14
+    },
+    {
+      "MemberName": "JABBA796",
+      "GenName": "CAB_MAINT_CMNTY_SOLAR_PARTCPNT",
+      "Type": "CGABB",
+      "Developer": "P44532",
+      "CCID": "20-000002864",
+      "MissingConflict": "No",
+      "IncorrectCCID": "No",
+      "id": 15
+    },
+    {
+      "MemberName": "JABBA797",
+      "GenName": "CAB_CODES_4_CMNTY_SOLAR_ENRL",
+      "Type": "CGABB",
+      "Developer": "P44533",
+      "CCID": "20-000002864",
+      "MissingConflict": "No",
+      "IncorrectCCID": "No",
+      "id": 16
+    },
+    {
+      "MemberName": "JABBA799",
+      "GenName": "CAB_JB465_CONTROL_TOTAL_UPDATE",
+      "Type": "CGABB",
+      "Developer": "P44534",
+      "CCID": "20-000002864",
+      "MissingConflict": "No",
+      "IncorrectCCID": "No",
+      "id": 17
+    },
+    {
+      "MemberName": "JABBA800",
+      "GenName": "CAB_GET_KWH_USAGE_FOR_12MONTHS",
+      "Type": "CGABB",
+      "Developer": "P44535",
+      "CCID": "20-000002859",
+      "MissingConflict": "No",
+      "IncorrectCCID": "No",
+      "id": 18
+    },
+    {
+      "MemberName": "JABBA812",
+      "GenName": "CAB_JB66_REBILL_SINGLE_INVOICE",
+      "Type": "CGABB",
+      "Developer": "P44536",
+      "CCID": "20-000002859",
+      "MissingConflict": "No",
+      "IncorrectCCID": "No",
+      "id": 19
+    },
+    {
+      "MemberName": "JABCNX04",
+      "GenName": "CAB_PASS_PARAM_TO_CANCEL_CON_DIS",
+      "Type": "CGABO",
+      "Developer": "P44543",
+      "CCID": "20-000002859",
+      "MissingConflict": "No",
+      "IncorrectCCID": "No",
+      "id": 20
+    },
+    {
+      "MemberName": "JABCN031",
+      "GenName": "CAB_UPDT_CUST_ACCT_PAPER_BIL_IND",
+      "Type": "CGABB",
+      "Developer": "P44544",
+      "CCID": "20-000002873",
+      "MissingConflict": "No",
+      "IncorrectCCID": "No",
+      "id": 21
+    },
+    {
+      "MemberName": "JABCN031",
+      "GenName": "CAB_UPDT_CUST_ACCT_PAPER_BIL_IND",
+      "Type": "CGABO",
+      "Developer": "P44545",
+      "CCID": "20-000002873",
+      "MissingConflict": "No",
+      "IncorrectCCID": "No",
+      "id": 22
+    },
+    {
+      "MemberName": "JABBA797",
+      "GenName": "CAB_CODES_4_CMNTY_SOLAR_ENRL",
+      "Type": "CGABB",
+      "Developer": "P44533",
+      "CCID": "20-000002864",
+      "MissingConflict": "No",
+      "IncorrectCCID": "No",
+      "id": 23
+    },
+    {
+      "MemberName": "JABBA794",
+      "GenName": "CAB_DEENROLL_CMNTY_SOLAR_PARTC",
+      "Type": "CGABB",
+      "Developer": "P44531",
+      "CCID": "20-000002864",
+      "MissingConflict": "No",
+      "IncorrectCCID": "No",
+      "id": 24
+    },
+    {
+      "MemberName": "JABBA796",
+      "GenName": "CAB_MAINT_CMNTY_SOLAR_PARTCPNT",
+      "Type": "CGABB",
+      "Developer": "P44532",
+      "CCID": "20-000002864",
+      "MissingConflict": "No",
+      "IncorrectCCID": "No",
+      "id": 25
+    },
+    {
+      "MemberName": "JABBA799",
+      "GenName": "CAB_JB465_CONTROL_TOTAL_UPDATE",
+      "Type": "CGABB",
+      "Developer": "P44534",
+      "CCID": "20-000002864",
+      "MissingConflict": "No",
+      "IncorrectCCID": "No",
+      "id": 26
+    },
+    {
+      "MemberName": "JABBA800",
+      "GenName": "CAB_GET_KWH_USAGE_FOR_12MONTHS",
+      "Type": "CGABB",
+      "Developer": "P44535",
+      "CCID": "20-000002859",
+      "MissingConflict": "No",
+      "IncorrectCCID": "No",
+      "id": 27
+    },
+    {
+      "MemberName": "JABBA812",
+      "GenName": "CAB_JB66_REBILL_SINGLE_INVOICE",
+      "Type": "CGABB",
+      "Developer": "P44536",
+      "CCID": "20-000002859",
+      "MissingConflict": "No",
+      "IncorrectCCID": "No",
+      "id": 28
+    },
+    {
+      "MemberName": "JABBA812",
+      "GenName": "CAB_JB66_REBILL_SINGLE_INVOICE",
+      "Type": "CGABB",
+      "Developer": "P44536",
+      "CCID": "20-000002859",
+      "MissingConflict": "No",
+      "IncorrectCCID": "No",
+      "id": 29
+    }
+  ]

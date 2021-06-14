@@ -1,0 +1,6 @@
+[user]
+	name = Raghu Kulkarni
+	email = rao346088@gmail.com
+[core]
+	editor = code --wait
+	autocrlf = true
