@@ -1,0 +1,153 @@
+<div class= "container-fluid" style="background-color:  rgb(250, 237, 199);">
+  <h1 class="justify-content-center">Request Detail Form:</h1>
+
+  <!--{{dt1}}-->
+  <!--{{RequestForm.status | json}}
+  {{selectedId}}
+  {{RequestForm.controls.Input_file.status  }} 
+  {{RequestForm.controls.DeveloperName.status}}
+  {{RequestForm.controls.Type.status}}
+  {{RequestForm.controls.SubmissionDate.status  }}          
+  {{RequestForm.controls.CompletionDate.status  }} 
+  {{RequestForm.controls.status.status  }} -->
+  
+    <form [formGroup] = "RequestForm"  (ngSubmit)="onSubmit()">
+
+        <div class="form-group justify-content-center form-row" novalidate >
+            <div class="col-4 my-col">
+        
+            <label class="label">File Upload  : </label>
+               <input type="file" #fileImportInput name="Input_file" formControlName="Input_file" 
+                class="form-control"  id="csvFileUpload" accept=".csv" />             
+           </div> 
+          </div>     
+
+           <div class="form-group justify-content-center form-row" novalidate >
+          <div class="col-4 my-col">
+            <label>Developer Name</label>
+            <select class="custom-select"   [class.is-invalid]="DeveloperName.invalid && DeveloperName.touched" 
+             formControlName="DeveloperName" class="form-control" >
+             <option value ="default" >Developer Name</option>
+             <option *ngFor="let DeveloperName of LDeveloperName"   [disabled]="status.value=='Completed'">{{ DeveloperName }}</option>
+          </select>
+             <div *ngIf = "DeveloperName.touched && DeveloperName.invalid"> 
+                <small class="text-danger" *ngIf="DeveloperName.errors?.required">DeveloperName is required</small>
+                
+            </div>
+            </div>
+      </div>
+      <div class="form-group justify-content-center form-row">
+            <div class="col-4 my-col">
+            <label>Request Type</label>  
+            <select class="custom-select"   [class.is-invalid]="Type.invalid && Type.touched" 
+             formControlName="Type" class="form-control" >
+                <option value ="default" >Request Type </option>
+                <option *ngFor="let Type of LType"   [disabled]="status.value=='Completed'">{{ Type }}</option>
+             </select>
+             <div *ngIf = "Type.touched && Type.invalid"> 
+             <small class="text-danger" *ngIf="Type.errors?.required">Request Type is required</small> 
+            </div>
+            </div>
+          </div>
+          <div class="form-group justify-content-center form-row" >  
+            <div class="col-4 my-col">
+            <label>Submission Date</label>
+            <input type="text" [class.is-invalid]="SubmissionDate.invalid && SubmissionDate.touched"
+             formControlName="SubmissionDate" class="form-control" >
+             <div *ngIf = "SubmissionDate.invalid && SubmissionDate.touched">
+                 <small class="text-danger" *ngIf="SubmissionDate.errors?.required">Subbission Date is required</small>
+             </div>
+        </div>
+    </div>
+   
+   <!-- <div class="form-group justify-content-center form-row" >  
+        <div class="col-4 my-col">
+            <label>Completion Date</label>
+            <input type="text" 
+            formControlName="CompletionDate" class="form-control" readonly>
+            
+
+        </div>
+        </div>-->
+
+
+        <div class="form-group justify-content-center form-row" >  
+        <div class="col-4 my-col">
+            <label> status</label>
+            <select class="custom-select"   [class.is-invalid]="status.invalid && status.touched" 
+            formControlName="status" class="form-control" >
+            <option value ="default" >status </option>
+            <option *ngFor="let status of Lstatus"   >{{ status }}</option>
+         </select>
+             <div *ngIf = "status.invalid && status.touched">
+                 <small class="text-danger" *ngIf="status.invalid && status.touched">status is required</small>
+             </div>
+            </div>
+        </div> 
+
+<div class="form-group justify-content-center form-row">
+  <div class="col-4 my-col">
+    <label> Assignee</label>
+    <select class="custom-select"   [class.is-invalid]="Assignee.invalid && Assignee.touched" 
+            formControlName="Assignee" class="form-control" >
+            <option value ="default" >Assignee </option>
+            <option *ngFor="let Assignee of LAssignee"   [disabled]="status.value=='Completed'">{{ Assignee }}</option>
+    </select>   
+   </div>
+</div>
+
+
+<div class="form-group justify-content-center form-row" >  
+  <div class="col-4 my-col">
+    <label>Previous Comments</label>
+    <textarea row="10" formControlName="Pcomment" class="form-control" readonly>   
+      </textarea>   
+    </div>
+</div>    
+
+<div class="form-group justify-content-center form-row" > 
+    <div class="col-4 my-col">
+      <label>New Comments</label>
+      <input type="text" formControlName="Ncomment" class="form-control">
+    </div>
+
+</div>
+<!--{{status.value | json}}-->
+  
+  <button 
+  (click)="UpdElement(RequestForm.value.id)" 
+  class="btn btn-secondary btn-sm m-2 " 
+  *ngIf="selectedId >0 " 
+
+  [disabled]="RequestForm.invalid || status.value=='Completed'" 
+  type="button"
+  >Update Element
+</button>
+
+
+<button 
+      (click)="cancle(0,'','','','','','')"
+        class="btn btn-secondary btn-sm m-2"
+        *ngIf="selectedId>0" 
+        [disabled]="RequestForm.invalid" 
+        type="button"
+        >Cancel update 
+</button>
+  
+  <div class="form-group justify-content-center form-row">      
+        <button class="btn btn-primary"  [disabled]="RequestForm.invalid"  type="submit">Submit</button>
+ </div>
+    </form>
+
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+
+

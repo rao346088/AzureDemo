@@ -1,0 +1,5 @@
+[
+  {"id": 1, "email": "xxx", "password": "xxxxx","role":"GENDEV"},
+  {"id": 2, "email": "P33961", "password": "p33961","role":"IBSEADM"},
+  {"id": 3, "email": "P41153", "password": "P41153","role":"GENDEV"}
+  ]

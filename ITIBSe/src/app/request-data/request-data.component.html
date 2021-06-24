@@ -1,0 +1,134 @@
+
+ 
+
+<div  class="navbar navbar-expand-sm navbar-warn bg-warn colclass">
+ 
+    <div class="navbar-brand " >REQUEST DATA TABLE</div>
+    <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" 
+    data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" 
+    aria-expanded="false" aria-label="Toggle navigation">
+     <span class="navbar-toggler-icon"></span>
+   </button>
+</div>
+
+
+
+
+
+ <!--<div class="row">  
+  <div class="col">
+    <div class="modal" id="Cmodal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title">Comments</h2>
+                    <button type="button" class="close">
+                        <span>&times;</span>
+                    </button>
+
+                </div>
+                <div class="modal-body">
+                    <p>this is all Comments</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>   -->
+
+
+   <mat-table class="table table-hover " style="background-color:  rgb(250, 227, 160);" 
+   [dataSource]="dataSource" matSort >
+
+<mat-row *ngIf="showcomments==true">
+   <div  class="alert alert-dismissible  alert1 " role="alert" >
+    <button type="button" class="close" data-dismiss="alert">
+      <span aria-hidden="true">&times;</span>
+    </button>
+    <h2  class="alert alert-success">All Comments</h2>
+    <div >
+      <!--<div *ngFor="let RequestData of Object.Ncomment; ">
+            <span>{{RequestData}}</span>
+        </div>  -->
+   </div> 
+  </div>  
+</mat-row >
+
+<mat-row  *ngIf="showcomments==false">
+<ng-container class = " col"  matColumnDef="id">
+    <mat-header-cell  class = " col"  *matHeaderCellDef mat-sort-header >  ID </mat-header-cell>
+    
+    <mat-cell   class = " col" *matCellDef="let Object;let i = index" > {{i + 1}} </mat-cell>
+</ng-container>
+
+ <ng-container class="col" matColumnDef="Ncomment">
+    <mat-header-cell class="col" *matHeaderCellDef mat-sort-header>comments</mat-header-cell>
+    <mat-cell class="col" *matCellDef="let Object;"> 
+      <button type="button"  (click)="showcomments=true" class="btn btn-secondary btn-sm m-2">
+            <mat-icon >Comments</mat-icon>
+        </button>
+      
+       
+        
+    </mat-cell> 
+</ng-container>
+
+<!--<ng-container class ="col" matColumnDef="Ncomment">
+    <mat-header-cell class="col" *matHeaderCellDef mat-sort-header>New Comments</mat-header-cell> 
+    <mat-cell class="col" *matCellDef ="let Object;">{{Object.Ncomment}}</mat-cell> 
+</ng-container>
+-->
+
+<ng-container class = " col"  matColumnDef="DeveloperName">
+    <mat-header-cell  class = " col"  *matHeaderCellDef mat-sort-header >  Developer Name </mat-header-cell>
+    <mat-cell   class = " col" *matCellDef="let Object;" > {{Object.DeveloperName}} </mat-cell>
+</ng-container>
+
+<ng-container class = " col"  matColumnDef="Type">
+    <mat-header-cell  class = " col"  *matHeaderCellDef mat-sort-header >  Request Type </mat-header-cell>
+    <mat-cell   class = " col" *matCellDef="let Object;" > {{Object.Type}} </mat-cell>
+</ng-container>
+
+
+<ng-container class = " col"  matColumnDef="SubmissionDate">
+    <mat-header-cell  class = " col"  *matHeaderCellDef mat-sort-header >  Submission Date </mat-header-cell>
+    <mat-cell   class = " col" *matCellDef="let Object;" > {{Object.SubmissionDate}} </mat-cell>
+</ng-container>
+
+<!--<ng-container class = " col"  matColumnDef="CompletionDate">
+    <mat-header-cell  class = " col"  *matHeaderCellDef mat-sort-header >  Completion Date </mat-header-cell>
+    <mat-cell   class = " col" *matCellDef="let Object;" > {{Object.CompletionDate}} </mat-cell>
+</ng-container>
+-->
+<ng-container class = " col"  matColumnDef="status">
+    <mat-header-cell  class = " col"  *matHeaderCellDef mat-sort-header >  Status </mat-header-cell>
+    <mat-cell   class = " col" *matCellDef="let Object;" > {{Object.status}} </mat-cell>
+</ng-container>
+
+<ng-container class="col" matColumnDef="Assignee">
+    <mat-header-cell class="col" *matHeaderCellDef mat-sort-header>Assignee</mat-header-cell>
+    <mat-cell clas="col" *matCellDef="let Object;">{{Object.Assignee}}</mat-cell>
+</ng-container>
+
+<ng-container class="col" matColumnDef="Input_file">
+    <mat-header-cell class="col" *matHeaderCellDef mat-sort-header>Input_file</mat-header-cell>
+    <mat-cell class="col" *matCellDef="let Object;">{{Object.Input_file}}</mat-cell>
+</ng-container> 
+
+
+<ng-container class="col"  matColumnDef="Edit">
+    <mat-header-cell  class = " col"     *matHeaderCellDef  > Edit </mat-header-cell> Edit
+    <mat-cell    class = " col"   *matCellDef="let Object;"  > 
+        <button [autofocus]="false" (click)="EditForm(Object.id)">
+             
+        <mat-icon aria-hidden="false" aria-label="Edit" >edit</mat-icon>  </button> </mat-cell>
+</ng-container>
+</mat-row >
+
+  <mat-header-row  *matHeaderRowDef="displayedColumns"></mat-header-row>
+    <mat-row  class="table .table-striped .table-hover" 
+    *matRowDef="let row; columns: displayedColumns;let Object">
+    </mat-row>
+  </mat-table>
+  <mat-paginator [pageSizeOptions]="[25, 10, 20]" showFirstLastButtons>
+  </mat-paginator>
+

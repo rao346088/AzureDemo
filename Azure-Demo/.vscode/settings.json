@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/2b025fe4-1056-4c61-a262-5d6eb8f003bb/resourceGroups/Demo/providers/Microsoft.Web/sites/itibse",
+    "appService.deploySubpath": "dist"
+}
